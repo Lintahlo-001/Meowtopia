@@ -16,6 +16,10 @@ body {
     color: #A6566B;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 h1, h2 {
     font-family: "Architects Daughter", cursive;
 }
@@ -43,6 +47,10 @@ h5 {
     font-size: 1rem;
     font-weight: 400;
     color: #1D1D1D;
+}
+
+a {
+    z-index: 2;
 }
 
 header {
@@ -110,15 +118,45 @@ nav a:hover {
     align-items: center;
 }
 
-.menu-button {
-    z-index: 2;
+.modal {
     display: none;
-}
+    position: fixed;
+    padding-top: 5%;
+    z-index: 3;
+    top: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(5px);
+  }
+
+.content {
+    background-color: #F2C2D4;
+    border-radius: 8px;
+    margin: auto;
+    padding: 1% 3%;
+    border: 5px solid #F2A7BB;
+    width: 80%;
+  }
+
+.menu-button {
+    display: none;
+}   
 
 main {
     height: 31.25rem;
     display: flex;
     justify-content: center;
+}
+
+.non-home {
+    width: 70%;
+    margin: -5% auto -5% auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #hero {
@@ -195,6 +233,17 @@ main {
 }
 
 #reasons p {
+    font-size: 1.125rem;
+    margin: 3%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #841935;
+    font-weight: 400;
+}
+
+.content p {
     font-size: 1.125rem;
     margin: 3%;
 }
@@ -324,6 +373,10 @@ footer {
     #reasons {
         margin-top: 20%;
     }
+
+    .non-home {
+        min-width: 90%;
+    }
 }
 
 @media (max-width: 1245px) {
@@ -367,6 +420,14 @@ footer {
     }
     
     #reasons p {
+        font-size: 1rem;
+    }
+
+    .content h1 {
+        font-size: 2.7rem;
+    }
+    
+    .content p {
         font-size: 1rem;
     }
 
@@ -425,11 +486,19 @@ footer {
     }
 
     #reasons h1 {
-        font-size: 2.1rem;
+        font-size: 2.5rem;
     }
     
     #reasons p {
-        font-size: .8rem;
+        font-size: 1rem;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .content p {
+        font-size: 1rem;
     }
 
     h2 {
@@ -543,11 +612,19 @@ footer {
     }
 
     #reasons h1 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     
     #reasons p {
-        font-size: .7rem;
+        font-size: .8rem;
+    }
+
+    .content h1 {
+        font-size: 2.3rem;
+    }
+    
+    .content p {
+        font-size: .8rem;
     }
 
     h2 {
@@ -663,6 +740,14 @@ footer {
     }
     
     #reasons p {
+        font-size: .6rem;
+    }
+
+    .content h1 {
+        font-size: 1.4rem;
+    }
+    
+    .content p {
         font-size: .6rem;
     }
 
