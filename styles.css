@@ -50,7 +50,7 @@ h5 {
 }
 
 a {
-    z-index: 2;
+    z-index: 99;
 }
 
 header {
@@ -109,7 +109,7 @@ nav a:hover {
     top: 0;
     right: 0;
     height: 100vh;
-    z-index: 3;
+    z-index: 100;
     width: 100%;
     backdrop-filter: blur(10px);
     display: none;
