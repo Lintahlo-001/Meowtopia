@@ -15,17 +15,17 @@
             <ul class="sidebar">
                 <li><a href="#" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active">Care</a></li>
-                <li><a href="#">Adopt</a></li>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="care.html" class="active">Care</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
             <ul>
                 <li class="hideOnMobile"><a href="index.html">Home</a></li>
                 <li class="hideOnMobile"><a href="care.html" class="active">Care</a></li>
-                <li class="hideOnMobile"><a href="#">Adopt</a></li>
-                <li class="hideOnMobile"><a href="#">Donate</a></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="adopt.html">Adopt</a></li>
+                <li class="hideOnMobile"><a href="donate.html">Donate</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
                 <li class="menu-button"><a href="#"  onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z"/></svg></a></li>
             </ul>
         </nav>
@@ -45,7 +45,7 @@
                 <div class="care-text">
                     <h4>Feeding 101</h4>
                     <h5>eat it <br> - Al Yankovic (1984)</h5>
-                    <a href="#" onclick="showModal('modal1')">Learn More</a>
+                    <a href="#" onclick="showModal(event, 'modal1')">Learn More</a>
                 </div>
             </div>
             <div class="care-article">
@@ -55,7 +55,7 @@
                 <div class="care-text">
                     <h4>Grooming & Hygiene</h4>
                     <h5>“Introduce your kitten to grooming tools early to make the process easier as they grow.”</h5>
-                    <a href="#" onclick="showModal('modal2')">Learn More</a>
+                    <a href="#" onclick="showModal(event, 'modal2')">Learn More</a>
                 </div>
             </div>
             <div class="care-article">
@@ -65,7 +65,7 @@
                 <div class="care-text">
                     <h4>Understanding Kitten Behavior</h4>
                     <h5>“If your kitten is overly shy or aggressive, don’t hesitate to reach out to an animal behaviorist for help.”</h5>
-                    <a href="#">Learn More</a>
+                    <a href="#" onclick="showModal(event, 'modal3')">Learn More</a>
                 </div>
             </div>
             <div class="care-article">
@@ -75,7 +75,7 @@
                 <div class="care-text">
                     <h4>Health & Veterinary Care</h4>
                     <h5>“Keep a vaccination schedule handy to ensure your kitten receives all necessary shots on time.”</h5>
-                    <a href="#">Learn More</a>
+                    <a href="#" onclick="showModal(event, 'modal4')">Learn More</a>
                 </div>
             </div>
             <div class="care-article">
@@ -85,7 +85,7 @@
                 <div class="care-text">
                     <h4>Socializing and Play</h4>
                     <h5>“Offer a variety of toys to keep your kitten’s mind sharp and their body active.”</h5>
-                    <a href="#">Learn More</a>
+                    <a href="#" onclick="showModal(event, 'modal5')">Learn More</a>
                 </div>
             </div>
             <div class="care-article">
@@ -95,7 +95,7 @@
                 <div class="care-text">
                     <h4>Preparing for Your Kitten’s Future</h4>
                     <h5>“Spaying or neutering your kitten early can prevent potential health issues and behavioral problems.”</h5>
-                    <a href="#">Learn More</a>
+                    <a href="#" onclick="showModal(event, 'modal6')">Learn More</a>
                 </div>
             </div>
         </div>
@@ -105,12 +105,163 @@
     </div>
     <div id="modal1" class="modal">
         <div class="content">
-            <p>Every adopted cat has a story. Many have been abandoned, lost, or surrendered, but each one deserves a loving home. By adopting, you're offering a cat a second chance at happiness and stability.</p>
+            <a href="#" onclick="closeModal(event, 'modal1')"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a><br>
+            <h1>Feeding 101</h1><br><br>
+            <p>
+                Welcoming a new kitten into your home is an exciting journey, but it comes with a range of responsibilities. With proper care, your new furry friend will grow up to be a healthy and happy adult cat. This guide will walk you through the essentials of kitten care, including nutrition, grooming, health, socialization, and more.
+            </p>
+            <p>
+                Newborn to 4 Weeks:<br><br>
+                &#8226; At this stage, kittens rely entirely on their mother’s milk. If the mother is unavailable, you’ll need to provide a kitten-specific formula using a small bottle or syringe. Feed every 2-3 hours, including overnight, and keep the formula warm to mimic the mother’s milk.<br><br>
+                &#8226; Make sure to stimulate the kitten’s genitals with a warm, damp cloth to encourage urination and defecation, as newborns cannot do this on their own. This process mimics the mother’s grooming.
+            </p>
+            <p>
+                4 to 8 Weeks:<br><br>
+                &#8226; Around this time, you can begin to introduce solid food. Mix a high-quality wet kitten food with a small amount of kitten formula to create a soft, gruel-like mixture. Place the food in a shallow dish and let the kitten explore it.<br><br>
+                &#8226; Continue supplementing with bottle feedings if needed, but gradually increase the amount of solid food. Kittens at this age should eat 4-5 times a day, as their stomachs are small but their energy needs are high.
+            </p>
+            <p>
+                8+ Weeks:<br><br>
+                &#8226; By 8 weeks, most kittens should be fully weaned from formula and eating solid food. Provide a mix of wet and dry food specifically formulated for kittens to support their growth.<br><br>
+                &#8226; Offer 3-4 small meals throughout the day, as kittens have a lot of energy but cannot eat large meals in one sitting. Always provide fresh water, and ensure your kitten has access to it at all times.
+            </p>
+            <p>
+                <strong>Pro Tip:</strong> “Always monitor your kitten’s appetite and weight to ensure they’re growing at a healthy rate. If your kitten is not gaining weight or is refusing food, consult your veterinarian immediately to rule out any underlying health issues.”
+            </p>
         </div>
     </div>
     <div id="modal2" class="modal">
         <div class="content">
-            <p> surrendered, but each one deserves a loving home. By adopting, you're offering a cat a second chance at happiness and stability.</p>
+            <a href="#" onclick="closeModal(event, 'modal2')"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a><br>
+            <h1>Grooming & Hygiene</h1><br><br>
+            <p>
+                Grooming is an essential aspect of kitten care that goes beyond keeping them clean—it also helps you build a bond with your new pet and allows you to monitor their health. Here’s how to establish a grooming routine that keeps your kitten looking and feeling their best:
+            </p>
+            <p>
+                Litter Training:<br><br>
+                &#8226; Kittens usually begin learning how to use a litter box around 3-4 weeks of age, often by watching their mother. If you are raising an orphaned kitten, place them in a shallow litter box after meals and naps to encourage them.<br><br>
+                &#8226; Use a non-clumping, unscented litter initially, as kittens may try to taste the litter, and clumping litter can be dangerous if ingested. Scoop the litter box daily and change the litter regularly to keep it clean.
+            </p>
+            <p>
+                Brushing:<br><br>
+                &#8226; Brushing helps to remove loose fur, prevent mats, and reduce the amount of fur your kitten ingests while grooming themselves. It’s especially important for long-haired breeds, which can be prone to tangles and mats.<br><br>
+                &#8226; Start with a soft-bristled brush or grooming glove, allowing your kitten to sniff it before gently brushing them. Gradually increase the duration of brushing sessions as your kitten becomes more comfortable.
+            </p>
+            <p>
+                Bathing:<br><br>
+                &#8226; Kittens generally don’t need regular baths, as they are good self-groomers. However, you may need to bathe your kitten if they get into something sticky or dirty.<br><br>
+                &#8226; Use a mild, kitten-specific shampoo, and ensure the water is warm but not too hot. After bathing, wrap your kitten in a towel and gently pat them dry. Avoid using a hairdryer, as the noise can be scary for them.
+            </p>
+            <p>
+                <strong>Pro Tip:</strong> “Introduce your kitten to grooming tools early to make the process easier as they grow. Gentle handling will make brushing and nail trimming a positive experience, reducing stress for both you and your kitten.”
+            </p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="content">
+            <a href="#" onclick="closeModal(event, 'modal3')"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a><br>
+            <h1>Understanding Kitten Behavior</h1><br><br>
+            <p>
+                Understanding your kitten’s behavior is key to creating a happy and harmonious home. Kittens have their own way of communicating through body language, vocalizations, and actions. Here’s how to interpret some common behaviors:
+            </p>
+            <p>
+                Exploring:<br><br>
+                &#8226; Kittens are naturally curious and love to explore their surroundings. This is how they learn about the world, but it can also lead them into trouble. Kitten-proof your home by securing cords, removing small objects that could be swallowed, and blocking access to high places where they could fall.<br><br>
+                &#8226; Provide safe spaces like cozy beds, cat trees, or covered boxes where your kitten can retreat when they need a break.
+            </p>
+            <p>
+                Play Biting and Scratching:<br><br>
+                &#8226; Play biting is normal for kittens as they learn to control their bite strength. If your kitten bites during play, redirect their attention to a toy rather than using your hands.<br><br>
+                &#8226; Provide scratching posts to satisfy their instinct to scratch. This helps them keep their claws healthy and saves your furniture from becoming a scratching target.
+            </p>
+            <p>
+                Sleep Patterns:<br><br>
+                &#8226; Kittens sleep a lot—up to 20 hours a day—because their bodies are working hard to grow. Ensure your kitten has a warm, quiet space to rest. They’ll also need time to adjust to their new home and may sleep more as they adapt.<br><br>
+                &#8226; Respect their need for rest, and avoid waking them for play. A well-rested kitten is happier and healthier.
+            </p>
+            <p>
+                <strong>Pro Tip:</strong> “If your kitten is overly shy or aggressive, don’t hesitate to reach out to an animal behaviorist for help. Early intervention can prevent behavioral issues from becoming ingrained habits.”
+            </p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="content">
+            <a href="#" onclick="closeModal(event, 'modal4')"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a><br>
+            <h1>Health & Veterinary Care</h1><br><br>
+            <p>
+                A crucial part of raising a healthy kitten is ensuring they receive regular veterinary care. This includes vaccinations, deworming, and preventive treatments that protect them from common health risks. Let’s break down what to expect during your kitten’s first few months of veterinary visits:
+            </p>
+            <p>
+                Vaccinations:<br><br>
+                &#8226; Vaccinations are essential for protecting your kitten against serious and sometimes fatal diseases. The core vaccines include FVRCP (which protects against feline viral rhinotracheitis, calicivirus, and panleukopenia) and rabies.<br><br>
+                &#8226; Kittens should start their vaccinations between 6-8 weeks of age, with boosters every 3-4 weeks until they are around 16 weeks old. Rabies vaccinations are usually given around 12 weeks and may require annual boosters depending on local regulations.
+            </p>
+            <p>
+                De-worming:<br><br>
+                &#8226; Most kittens are born with intestinal parasites, which they can acquire from their mother or the environment. Common worms include roundworms and hookworms.<br><br>
+                &#8226; Deworming typically begins at 2 weeks of age and is repeated every 2-4 weeks until the kitten reaches 12 weeks old. After that, your vet may recommend monthly parasite preventatives.
+            </p>
+            <p>
+                Parasite Prevention:<br><br>
+                &#8226; Kittens are vulnerable to fleas, ticks, and mites, which can cause itching, anemia, or infections. Use a kitten-safe flea preventative as recommended by your vet to keep your kitten parasite-free.<br><br>
+                &#8226; Flea combs are a great tool for detecting fleas early, and regular grooming can help keep your kitten’s coat healthy and clean.
+            </p>
+            <p>
+                <strong>Pro Tip:</strong> “Keep a vaccination schedule handy to ensure your kitten receives all necessary shots on time. Early protection is crucial for preventing serious illnesses and giving your kitten a healthy start in life.”
+            </p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="content">
+            <a href="#" onclick="closeModal(event, 'modal5')"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a><br>
+            <h1>Socializing and Play</h1><br><br>
+            <p>
+                Proper socialization and play are crucial for your kitten’s mental and emotional development. A well-socialized kitten is more likely to grow into a confident, friendly adult cat. Here’s how to help your kitten develop social skills and build a positive relationship with their environment:
+            </p>
+            <p>
+                Playtime:<br><br>
+                &#8226; Kittens are full of energy and have a natural instinct to hunt, pounce, and chase. Provide a variety of toys, including feather wands, interactive balls, and catnip-filled toys to keep them entertained and stimulated.<br><br>
+                &#8226; Play sessions should last around 10-15 minutes and be repeated several times a day. Interactive play with you helps strengthen your bond with your kitten and encourages healthy exercise.
+            </p>
+            <p>
+                Socialization with People and Pets:<br><br>
+                &#8226; Introduce your kitten to new experiences, people, and other pets gradually. Start by letting them explore a small, safe room and slowly expand their access as they become more comfortable.<br><br>
+                &#8226; When introducing your kitten to other pets, do so slowly and under supervision. Use a baby gate or a pet carrier for initial introductions, allowing the animals to sniff and observe each other.
+            </p>
+            <p>
+                Handling and Touch:<br><br>
+                &#8226; Get your kitten accustomed to being touched on their paws, ears, and mouth. This will make future grooming and veterinary visits easier and less stressful.<br><br>
+                &#8226; Reward your kitten with treats or praise when they remain calm during handling sessions to reinforce positive behavior.
+            </p>
+            <p>
+                <strong>Pro Tip:</strong> “Offer a variety of toys to keep your kitten’s mind sharp and their body active. Rotate toys regularly to keep playtime fresh and engaging, and always supervise play with string or small objects to prevent choking.”
+            </p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="content">
+            <a href="#" onclick="closeModal(event, 'modal6')"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28" fill="#000000"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a><br>
+            <h1>Preparing for Your Kitten’s Future</h1><br><br>
+            <p>
+                As your kitten grows, certain steps are necessary to ensure their long-term health, safety, and behavior. Here’s what you need to know about spaying, neutering, and microchipping your kitten:
+            </p>
+            <p>
+                Spaying/Neutering:<br><br>
+                &#8226; Spaying (for females) or neutering (for males) is usually recommended when your kitten reaches 4-6 months of age, though this can vary based on your vet’s advice. The procedure not only helps prevent overpopulation but can also reduce the risk of certain cancers and health problems.<br><br>
+                &#8226; Spaying or neutering can also positively impact your kitten’s behavior, reducing the likelihood of spraying, aggression, and roaming.
+            </p>
+            <p>
+                Microchipping:<br><br>
+                &#8226; Microchipping involves inserting a tiny chip under your kitten’s skin, usually between the shoulder blades. This chip contains a unique ID number that can be read by a scanner, helping to reunite you with your kitten if they become lost.<br><br>
+                &#8226; After microchipping, make sure to register the chip with your contact information in a national pet database. Keep this information up-to-date if you move or change phone numbers.
+            </p>
+            <p>
+                Annual Check-Ups:<br><br>
+                &#8226; As your kitten grows into adulthood, continue regular vet visits for annual exams, booster vaccinations, and dental care. These check-ups help catch any potential health issues early and ensure your cat stays healthy throughout their life.
+            </p>
+            <p>
+                <strong>Pro Tip:</strong> “Spaying or neutering your kitten early can prevent potential health issues and behavioral problems. Talk to your vet about the best time for the procedure, and make microchipping part of your kitten’s routine care.”
+            </p>
         </div>
     </div>
     <footer>Copyright &copy; 2024 Meowtopia | All Rights Reserved</footer>

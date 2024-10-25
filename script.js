@@ -8,7 +8,8 @@ function hideSidebar() {
     sidebar.style.display = 'none'
 }
 
-function showModal(modalId) {
+function showModal(event, modalId) {
+    event.preventDefault();
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.style.display = 'block';
@@ -16,7 +17,8 @@ function showModal(modalId) {
     }
 }
 
-function closeModal(modalId) {
+function closeModal(event, modalId) {
+    event.preventDefault();
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.style.display = 'none';
