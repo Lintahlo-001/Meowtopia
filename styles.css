@@ -54,7 +54,7 @@ a {
 }
 
 header {
-    margin-top: 1.875rem;
+    padding-top: 1.875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,7 +173,6 @@ main {
     top: 1.5rem;
     left: 30%;
     transform: translateX(-5%);
-    z-index: 1;
 }
 
 .hero-image img {
@@ -580,7 +579,7 @@ footer {
     }
 
     #hero {
-        margin-top: 23%;
+        padding-top: 30%;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
