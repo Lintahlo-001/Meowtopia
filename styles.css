@@ -157,8 +157,13 @@ main {
 
 .non-home {
     width: 70%;
-    margin: auto;
+    height: auto;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
@@ -202,6 +207,12 @@ main {
 .sub-title {
     font-family: "Architects Daughter", cursive;
     font-size: 2.1rem;
+}
+
+.normal {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .hero-text button {
@@ -329,15 +340,91 @@ hr {
     text-decoration: underline;
 }
 
-.mirrored {
-    -webkit-transform: scaleX(-1);
+.hor-flip {
     transform: scaleX(-1);
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.trail.ver-flip.rotate {
+    transform: rotateX(180deg) rotate(90deg);
+}
+
+.orgs {
+    margin: auto;
+    margin-bottom: 5%;
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.orgs div {
+    margin: 0 5%;
+    padding: 2% 3% 2% 3%;
+    height: auto;
+    background-color: #F2A7BB;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.org-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.org-img {
+    height: 50%;
+    width: 50%;
+    border-radius: 40px;
+}
+
+.hide {
+    display: none;
 }
 
 footer {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 1%;
+}
+
+.about-img {
+    height: 40%;
+    width: 40%;
+}
+
+.org-adopt {
+    margin: auto;
+    margin-bottom: 5%;
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.org-adopt div {
+    margin: 0 5%;
+    padding: 2% 3% 2% 3%;
+    height: auto;
+    background-color: #F6D3D3;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-border {
+    border: 5px solid #F2A7BB;
 }
 
 @media (max-width: 1375px) {
@@ -351,6 +438,12 @@ footer {
         width: 135%;
     }
     
+    .org-img {
+        height: 45%;
+        width: 45%;
+        border-radius: 40px;
+    }
+
     .hero-text img {
         max-width: 40%;
         max-height: 40%;
@@ -391,6 +484,11 @@ footer {
         height: 120%;
         width: 120%;
     }
+
+    .org-img {
+        height: 50%;
+        width: 50%;
+    }
     
     .hero-text {
         padding-left: 10%;
@@ -425,6 +523,10 @@ footer {
     #reasons p {
         font-size: 1rem;
     }
+
+    .org-text p {
+        font-size: 1rem;
+    }
     
     h2 {
         font-size: 2.5rem;
@@ -456,6 +558,33 @@ footer {
     .links {
         font-size: 1.5rem;
     }
+
+    .orgs div {
+        flex-direction: column;
+        padding-top: 7%;
+        padding-bottom: 3%;
+    }
+
+    .org-adopt {
+        gap: 1rem;
+    }
+
+    .org-adopt div {
+        padding-top: 4%;
+        flex-direction: column;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .orgs {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -482,10 +611,6 @@ footer {
 
     #reasons h1 {
         font-size: 2.5rem;
-    }
-    
-    #reasons p {
-        font-size: 1rem;
     }
 
     .content h1 {
@@ -614,6 +739,10 @@ footer {
         font-size: .8rem;
     }
 
+    .org-text p {
+        font-size: .8rem;
+    }
+
     h2 {
         font-size: 2rem;
     }
@@ -706,6 +835,10 @@ footer {
         font-size: .7rem;
     }
 
+    .non-home {
+        margin-bottom: 15%;
+    }
+
 }
 
 @media (max-width: 710px) {
@@ -723,6 +856,10 @@ footer {
     }
     
     #reasons p {
+        font-size: .6rem;
+    }
+
+    .org-text p {
         font-size: .6rem;
     }
 
