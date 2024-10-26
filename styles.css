@@ -215,7 +215,8 @@ main {
     font-weight: 400;
 }
 
-.hero-text button {
+.hero-text a {
+    text-decoration: none;
     margin-top: 1.25rem;
     background-color: #F2DCE4;
     color: #3C3C3C;
@@ -228,7 +229,7 @@ main {
     transition: background-color 0.3s;
 }
 
-.hero-text button:hover {
+.hero-text a:hover {
     background-color: #ffb6c1;
     color: #4a4a4a;
 }
@@ -461,7 +462,7 @@ footer {
         font-size: 1.8rem;
     }
     
-    .hero-text button {
+    .hero-text a {
         padding: 15px 35px;
         font-size: 1.2rem;
     }
@@ -507,7 +508,7 @@ footer {
         font-size: 1.6rem;
     }
     
-    .hero-text button {
+    .hero-text a {
         padding: 10px 30px;
         font-size: 1.1rem;
     }
@@ -671,7 +672,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .hero-text button {
+    .hero-text a {
         padding: 10px 25px;
         font-size: 1.1rem;
     }
@@ -723,7 +724,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    .hero-text button {
+    .hero-text a {
         font-size: 1rem;
     }
 
